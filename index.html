@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Future Career</title>
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        header h1 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 2em;
+            text-transform: uppercase;
+            animation: fadeIn 1s ease-out;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        main {
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        p {
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Future Career</h1>
+    </header>
+    <nav>
+        <a href="programmer.html">Afonso's Career</a>
+        <a href="smh.hmtl">Rodrigo's Career</a>
+        <a href="credits.html">Credits</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Afonso's Career</h2>
+            <p>Information about Afonso's career goes here...</p>
+        </section>
+        <section>
+            <h2>Rodrigo's Career</h2>
+            <p>Information about Rodrigo's career goes here...</p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <p>Information about your skills goes here...</p>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>Contact information goes here...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Made by Afonso and Rodrigo</p>
+    </footer>
+    <script>
+        setTimeout(function() {
+            document.querySelector('main').style.opacity = '1';
+            document.querySelector('main').style.transform = 'translateY(0)';
+        }, 200);
+    </script>
+</body>
+</html>
+
+
+
